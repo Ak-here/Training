@@ -1,0 +1,101 @@
+.bg-red{
+    background-color: red;
+}
+
+.btn{
+    border: 1px solid;
+    padding: 10px 26px;
+    border-radius: 10px;
+    color: #fff;     
+    background: #D8514E;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-light{
+    color: #D8514E;
+    background: #fff; 
+}
+
+.btn-dark{
+    background: #2A2B2D;
+    color: #fff;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.just-cont-space-between{
+    justify-content: space-between;
+}
+
+.align-item-center{
+    align-items: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #2A2B2D;
+}
+
+/* Card in Destinations */
+
+.card{
+    background-color: #E9E9E9;
+    color: #2A2B2D;
+    border-radius: 10px;
+    line-height: 1rem;
+    max-width: 38.8%;
+    line-height: 1rem;
+}
+
+.card-content{
+    padding: 0 17px;
+}
+
+.card-content .date{
+    padding-top: 18px;
+    padding-bottom: 27px;
+}
+
+.card-content p{
+    padding-top: 8px;
+    padding-bottom: 17px;
+}
+
+.card-content .by-name{
+    text-align: right;
+    padding-bottom: 23px;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .card{
+        max-width: 92%;
+        margin: 10px 0;
+    }
+
+}
+
+/* .container .last-main p{
+    padding-left: 161px;
+}
+
+.container .last-main i{
+    padding-left: 100px;
+} */
+
+/* .container .last-main img{
+    display: inline-block;
+    width: 15px;
+    height: 25px;
+    position: absolute;
+    left: 193px;
+    top: 115px;
+} */

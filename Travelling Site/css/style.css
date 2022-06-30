@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+} 
+
+/* header */
+
+header{
+    padding-top: 40px;
+}
+
+.logo{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 48px;
+    padding-left: 141px;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding-right: 141px;
+}
+
+.navbar ul li{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 25px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar ul li:first-child a{
+    color: #D8514E;
+}
+
+.navbar ul li:last-child a{
+    color: #fff;
+}
+
+/* section 1 and About us*/
+
+#section1{
+    max-width: 81vw;
+    margin: 0 auto;
+}
+
+.first-sec-main-div{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.main-content p{
+    padding: 20px 0;
+}
+
+.main-content .buttons{
+    padding-top: 25px;
+}
+
+.buttons .link{
+    padding-left: 20px;
+}
+
+.first-heading{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #2A2B2D;
+}
+
+/* 
+.image1{
+    background : url(../img/first1.png) no-repeat cover/center;
+    height: 30vh;
+} */
+
+
+#Aboutus{
+    max-width: 81vw;
+    margin: 0 auto;
+    margin-top: 13rem;
+}
+
+
+#Aboutus .first-sec-main-div .main-content{
+    padding-left: 307px;
+}
+
+/* Destinations */
+
+#Destinations{
+    max-width: 81vw;
+    margin: 0 auto;
+    margin-top: 13rem;
+}
+
+.section-heading{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#Destinations .container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    max-width: 34%;
+    flex: 33%;
+    /* padding: 0 20px; */
+}
+
+.column img{
+    width: 100%
+} 
+
+.button{
+    text-align: center;
+    padding-top: 45px;
+}
+
+.img-container{
+    position: relative;
+    padding: 10px 10px;
+}
+
+.bottom-left-content {
+    position: absolute;
+    bottom: 26px;
+    left: 19px;
+    background-color: #fff;
+    color: #2A2B2D;
+    border-radius: 10px;
+    padding: 4px 19px;
+  }
+
+  /* Reviews */
+
+#Reviews{
+    max-width: 81vw;
+    margin: 0 auto;
+    margin-top: 13rem;
+}
+
+#Reviews .review-section{
+    display: flex;
+    justify-content: space-between;
+    flex: 50%;
+    padding-top: 38px;
+  }
+
+  /* Subscription */
+
+#Subscription{
+    margin-top: 8rem;
+    background: #D8514E;
+    color: #fff;
+    min-height: 250px;
+}
+
+#Subscription .container{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#Subscription .container .subs-content h2{
+    padding-top: 69px;
+}
+
+#Subscription .container .subs-bar{
+    padding-top: 108px;
+}
+
+.subs-bar{
+    position: relative;
+}
+
+.subs-bar input{
+    width: 30rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.subs-bar button{
+    position: absolute;
+    top: 110.5px;
+    right: 5px;
+}
+
+/* Footer */
+
+footer{
+    background: #2A2B2D;
+    color: #fff;
+    min-height: 252px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 60px;
+}
+
+footer .container .last-main{
+    align-items: flex-start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 50%;
+    padding-left: 140px;
+}
+
+.footer-logo{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 48px;
+}
+
+
+footer .sub-container{
+    display: flex;
+    line-height: 2rem;
+    flex: 50%;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer .sub-container .explore ul{
+    list-style: none;
+}
+
+
+footer .container .icon-p{
+    padding-left: 10px;
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px){
+
+    /* Navbar */
+    header{
+        padding-top: 5px;
+    }
+
+    .logo{
+        padding-left: 11px;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .logo{
+        text-align: left;
+    }
+
+    /* Section 1 */
+    #section1{
+        max-width: 100vw;
+    }
+
+    #section1 .first-sec-main-div{
+        flex-direction: column-reverse;
+        padding-top: 30px;
+    }
+
+    #section1 .first-sec-main-div .main-content{
+        text-align: left;
+        padding-left: 11px;
+    }
+
+    .main-content p{
+        padding: 6px 0px 10px 0px;
+    }
+
+    .main-content .buttons{
+        padding-top: 4px;
+    }
+
+    .first-sec-main-div .main-content p{
+        font-size: 14px;
+    }
+
+    .first-sec-main-div .image1 img{
+        width: 96%;
+        margin: 0 7px;
+    }
+
+    .first-sec-main-div .image2 img{
+        width: 119%;
+    }
+
+    /* About us */
+    #Aboutus{
+        margin: 80px 5px 0 5px;
+    }
+
+    #Aboutus .first-sec-main-div{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+
+    }
+    
+    #Aboutus .first-sec-main-div .main-content{
+        text-align: left;
+        padding-left: 3px;
+    }
+
+    /* Destinations */
+    #Destinations{
+        min-width: 100%;
+        margin-top: 80px;
+    }
+
+    .column-last{
+        display: none !important;
+    }
+
+    .row{
+        display: flex;
+    }
+
+    .column{
+        display: flex;
+        max-width: 50%;
+        /* flex: 50%; */
+    }
+
+    .column img{
+        width: 100%
+    } 
+
+    /* .col-1{
+        padding-left: 20px;
+    } */
+
+    .bottom-left-content {
+        bottom: 19px;
+        left: 12px;
+        padding: 1px 3px;
+      }
+
+    .bottom-left-content h4{
+        font-size: 14px;
+    } 
+
+    .bottom-left-content p{
+        font-size: 10px;
+    } 
+
+
+    /* Reviews */
+    #Reviews{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #Reviews .review-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+        margin-top: 10px;
+    }
+
+    #Reviews .review-section .card img{
+        width: 100%;
+    }
+
+    #Reviews .review-section .card .card-content p,
+    #Reviews .review-section .card .card-content .by-name{
+        font-size: 14px;
+    }
+
+    .button{
+        padding-top: 10px;
+    }
+
+    /* Subscription */
+    #Subscription{
+        min-height: 235px;
+        margin-top: 3.5rem;
+        padding-top: 30px;
+    }
+
+    #Subscription .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Subscription .container .subs-content h2{
+        padding-top: 0;
+        font-size: 14px;
+    }
+
+    #Subscription .container .subs-content p{
+        padding-top: 0;
+        font-size: 12px;
+        padding: 0px 37px;
+    }
+    
+    #Subscription .container .subs-bar{
+        padding-top: 20px;
+    }
+    
+    .subs-bar input{
+        width: 19rem;
+        height: 2.5rem;
+    }
+
+    .subs-bar button{
+        top: 21px;
+        right: 2px;
+    }
+
+    /* Footer */
+    footer{
+        display: none;
+    }
+
+}
