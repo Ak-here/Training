@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="message"></div>
+    <div id="box"></div>
+    <div id="clock"></div>
+    <div id="date"></div>
+    <script>
+        setInterval(clockTime, 1000);                       //This method calls "clockTime" function at every 1000ms (1 sec)
+        function clockTime(){
+            let time = new Date();
+            let hr = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            let day = time.getDate();
+            let month = time.getMonth();
+            let year = time.getFullYear();
+            let meridian = hr > 12 ? "PM" : "AM";
+            const morningMessage = "Good Morning";
+            const afternoonMessage = "Good Afternoon";
+            const eveningMessage = "Good Evening";
+            const nightMessage = "Good Night";
+            const monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            if (hr >= 6 && hr <= 11){
+                document.getElementById("message").innerHTML = morningMessage; 
+            }
+
+            if (hr >= 12 && hr <= 17){
+                document.getElementById("message").innerHTML = afternoonMessage; 
+            }
+
+            if (hr >= 18 && hr <= 19){
+                document.getElementById("message").innerHTML = eveningMessage; 
+            }
+
+            if (hr >= 20 || hr <= 6){
+                document.getElementById("message").innerHTML = nightMessage; 
+            }            
+
+            if (hr > 12){
+                hr-=12;
+            }
+
+           
+
+            let currentTime = hr + ":" + min + ":" + sec + " " + meridian; 
+            document.getElementById("clock").innerHTML = currentTime;
+
+            let currentDate = day + " " + monthName[month-1] + " " + year;
+            document.getElementById("date").innerHTML = currentDate;
+        }
+        clockTime();
+    </script>
+</body>
+</html>
